@@ -10,7 +10,10 @@ void setup()
 }
 void draw()
 {
-stroke(math.random()*255 +1);		
+stroke(math.random()*255 +1);
+while(endX <= 300){
+	
+}		
 }
 void mousePressed()
 {
