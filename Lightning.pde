@@ -6,7 +6,7 @@ void setup()
 {
   size(300,300);
   strokeWeight(6);
-  background(255,0,0);
+  background(0,0,0);
 }
 void draw()
 {
@@ -21,6 +21,10 @@ while(endX <= 300){
 }
 void mousePressed()
 {
+startX = 0
+startY = 150
+endX = 0
+endY = 150
 redraw()
 }
 
