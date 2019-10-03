@@ -12,7 +12,11 @@ void draw()
 {
 stroke(math.random()*255 +1);
 while(endX <= 300){
-	
+	endX = startX + (int)(math.random() * 9) + 1
+	endY = startY + (int)(math.random() * 9) + 1
+	line(startX, startY, endX, endY);
+	startX = endX
+	startY = endY
 }		
 }
 void mousePressed()
