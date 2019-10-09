@@ -10,10 +10,10 @@ void setup()
 }
 void draw()
 {
-stroke(math.random()*255 +1);
-while(endX <= 500){
-	endX = startX + (int)(math.random() * 9) + 1;
-	endY = startY + (int)(math.random() * 9) + 1;
+while(endX < 500){
+	stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
+	endX = startX + (int)(math.random() * 10);
+	endY = startY + (int)(math.random() * 19) - 9;
 	line(startX, startY, endX, endY);
 	startX = endX;
 	startY = endY;
@@ -22,9 +22,8 @@ while(endX <= 500){
 void mousePressed()
 {
 startX = 0;
-startY = 150;
+startY = 0;
 endX = 0;
-endY = 150;
-redraw();
+endY = 0;
 }
 
