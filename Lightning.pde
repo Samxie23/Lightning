@@ -1,6 +1,6 @@
 int startY = 150;
-int startX = 0;
-int endX = 0;
+int startX = 20;
+int endX = 20;
 int endY = 150;
 void setup()
 {
@@ -10,20 +10,21 @@ void setup()
 }
 void draw()
 {
-while(endX < 500){
-	stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
-	endX = startX + (int)(math.random() * 10);
-	endY = startY + (int)(math.random() * 15);
-	line(startX, startY, endX, endY);
+stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
+while(endX <= 500){
+	endX = startX + (int)(Math.random() * 10);
+	endY = startY + (int)(Math.random() * 15);
+	line(startY, startX, endY, endX);
 	startX = endX;
 	startY = endY;
-}		
+}
+ellipse(100, 50, 100, 100);		
 }
 void mousePressed()
 {
-startX = 150;
-startY = 0;
-endX = 150;
-endY = 0;
+startX = 50;
+startY = 150;
+endX = 50;
+endY = 150;
 }
 
